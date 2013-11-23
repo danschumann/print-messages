@@ -42,9 +42,8 @@ willSucceed.resolve("resolve is green");
 
 #Examples
 
-![example-image](https://rawgithub.com/danschumann/print-messages/master/example_output.gif)
-
 ####Basic log, warn, success, error
+![example-image](https://rawgithub.com/danschumann/print-messages/master/basic_example.gif)
 ```js
 pm.log('log me', 'log me long tim');
 pm.warn('warn me', 'warn me long tim');
@@ -53,6 +52,7 @@ pm.error('error me', 'error me long tim');
 ```
 
 #### Node callbacks  
+![example-image](https://rawgithub.com/danschumann/print-messages/master/node_example.gif)
 ```js
 // Node callbacks are usually (err, res)
 pm.node('some failing save message', 'That failed', null);
@@ -62,6 +62,7 @@ pm.node('some success message', null, {
 ```
 
 #### Promises    
+![example-image](https://rawgithub.com/danschumann/print-messages/master/promise_example.gif)
 ```js
 promise = require('when');
     
@@ -74,4 +75,3 @@ willSucceed.resolve('That works');
 pm.promise('Whereas this is for a promise', willFail.promise);
 willFail.reject('That fails');
 ```
-
