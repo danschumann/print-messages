@@ -33,6 +33,5 @@ printMessages[n] = method for n, method of {
     , (err) =>
       @error   msg, err
 }
-console.log printMessages
 
 module.exports = printMessages
