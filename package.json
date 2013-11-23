@@ -1,6 +1,6 @@
 {
   "name": "print-messages",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "We console lots, this handles everything",
   "main": "lib/print-messages.js",
   "scripts": {
