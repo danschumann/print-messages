@@ -5,10 +5,12 @@ printMessages = {}
 # We have types like logs, errors, and warnings that are the same except for color
 printMessages.color = (color) ->
   ->
+    _color = color
     console.log ''
     for arg, n in arguments
       if 'string' is typeof arg 
-        console.log arg[unless n then color else 'white']
+        console.log arg[_color] # we get at least 1 message of that color, even if it isn't the first
+        _color = 'white'
       else if arg
         console.log arg
 
