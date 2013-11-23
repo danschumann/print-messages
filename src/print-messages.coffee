@@ -45,6 +45,9 @@ printMessages[n] = method for n, method of {
     , (err) =>
       printMessages.error   msg, err
 
+
+  node_cb: (msg) ->
+    -> printMessages.node msg, arguments...
   
   log_cb: (msg) ->
     -> printMessages.log msg, arguments...
