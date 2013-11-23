@@ -14,20 +14,35 @@ Besides normal stuff like colored `log`, `warn`, `success`, and `error` methods,
 * `node`
 * `promise`
 
+------------------------
+
+Node.js usually has callbacks like `function(err, result){ ...`
 ```js
 user.save(function(er,res){
     // String will be green or red depending on er, res
     pm.node('user.save', er, res);
 })
-    
-var promiser = require('when');
-willSucceed = promiser.defer()
-// At this point, we don't know what color it will be    
-pm.promise('promise result is: ', willSucceed.promise);
-willSucceed.resolve("it's green, free bacon for everyone!");
 ```
 
-##Examples
+-----------------------------
+
+Promises are becoming popular
+```js
+var promiser = require('when');
+willSucceed = promiser.defer()
+
+pm.promise('promise result is(green or red): ', willSucceed.promise);
+willSucceed.resolve("resolve is green");
+
+// or we could have done this
+//willSucceed.reject("reject is red");
+```
+
+--------------------------
+
+#Examples
+
+![example-image](https://rawgithub.com/danschumann/print-messages/master/example_output.gif)
 
 ####Basic log, warn, success, error
 ```js
@@ -60,4 +75,3 @@ pm.promise('Whereas this is for a promise', willFail.promise);
 willFail.reject('That fails');
 ```
 
-![example-image](https://rawgithub.com/danschumann/print-messages/master/example_output.gif)
