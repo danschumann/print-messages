@@ -4,6 +4,10 @@ print-messages
 We console a lot, this handles it all
 
     npm install print-messages
+    
+```js
+    pm = require('print-messages');
+```
 
 Besides normal stuff like colored log, warn, success, and error methods, we have 2 more
 
@@ -23,11 +27,7 @@ Besides normal stuff like colored log, warn, success, and error methods, we have
     willSucceed.resolve("it's green, hooray!");
 ```
 
-
 ##Examples
-```js
-    pm = require('print-messages');
-```
 
 ####Basic log, warn, success, error
 ```js
