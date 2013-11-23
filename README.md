@@ -80,6 +80,10 @@ willFail.reject('That fails');
 Patch Notes
 ------------------------------
 
+v0.2.0
+
+Added `pm.node_cb` for `user.save(pm.node_cb('My message might be green or red'))`
+
 v0.1.0
 
 Added `pm.crash` and `pm.crash_cb`
