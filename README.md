@@ -1,7 +1,7 @@
 print-messages
 ==============
 
-Because `console.log`s that are easier to read and write is a double edge sword of time saving.
+Because making `console.log` easier to read and write is a double edge sword of time saving.
 
     npm install print-messages
     
