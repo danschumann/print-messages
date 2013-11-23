@@ -75,3 +75,15 @@ willSucceed.resolve('That works');
 pm.promise('Whereas this is for a promise', willFail.promise);
 willFail.reject('That fails');
 ```
+
+------------------------------
+Patch Notes
+------------------------------
+
+v0.1.0
+
+Added `pm.crash` and `pm.crash_cb`
+for `promise.otherwise(pm.crash)` or `promise.otherwise(pm.crash_cb('with message'))`
+
+Added `pm.error_cb`, `pm.success_cb`, `pm.warn_cb`, `pm.log_cb`
+for `user.save().error(pm.error_cb('it failed)); // logs: 'it failed'.red, errors...`
