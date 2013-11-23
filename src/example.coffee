@@ -18,11 +18,13 @@ willFail = will.defer()
 pm.promise 'Whereas this is for a promise', willFail.promise
 willFail.reject('That fails')
 
-## This crashes things like we want it to
-#require('when/monitor/console'); # this is needed for when to not swallow errors
-#willFail = will.defer()
-#willFail.promise.otherwise(pm.crash_cb 'Crash on fail')
-#willFail.reject('doh!')
+`
+// This crashes things like we want it to
+//require('when/monitor/console'); // this is needed for when to not swallow errors
+//willFail = will.defer();
+//willFail.promise.otherwise(pm.crash_cb 'Crash on fail');
+//willFail.reject('doh!');
+`
 
 willFail = will.defer()
 willFail.promise.otherwise(pm.error_cb 'Hopefully it fails')
