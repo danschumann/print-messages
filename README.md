@@ -9,7 +9,7 @@ We console a lot, this handles it all
 pm = require('print-messages');
 ```
 
-Besides normal stuff like colored log, warn, success, and error methods, we have 2 more
+Besides normal stuff like colored `log`, `warn`, `success`, and `error` methods, we have 2 more
 
 * `node`
 * `promise`
