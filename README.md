@@ -45,7 +45,8 @@ pm.node('some success message', null, {
   results: 'are cool'
 });
 ```
-    
+
+#### Promises    
 ```js
 promise = require('when');
     
