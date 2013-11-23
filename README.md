@@ -17,14 +17,14 @@ Besides normal stuff like colored `log`, `warn`, `success`, and `error` methods,
 ```js
 user.save(function(er,res){
     // String will be green or red depending on er, res
-    pm.node('user did what?', er, res);
+    pm.node('user.save', er, res);
 })
     
 var promiser = require('when');
 willSucceed = promiser.defer()
 // At this point, we don't know what color it will be    
-pm.promise('This could be red if we call .reject, or green if .resolve', willSucceed.promise);
-willSucceed.resolve("it's green, hooray!");
+pm.promise('promise result is: ', willSucceed.promise);
+willSucceed.resolve("it's green, free bacon for everyone!");
 ```
 
 ##Examples
