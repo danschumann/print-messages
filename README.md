@@ -20,7 +20,7 @@ Node.js usually has callbacks like `function(err, result){ ...`
 ```js
 user.save(function(er,res){
     // String will be green or red depending on er, res
-    pm.node('user.save', er, res);
+    pm.node('user.save results...', er, res);
 })
 ```
 
