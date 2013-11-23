@@ -5,7 +5,6 @@ We console a lot, this handles it all
 
 
 ####Example
-
 ```js
     var fs, pm, promise, willFail, willSucceed;
     fs = require('fs');
