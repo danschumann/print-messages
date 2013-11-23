@@ -1,8 +1,8 @@
 {
   "name": "print-messages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "We console lots, this handles everything",
-  "main": "lib/",
+  "main": "lib/print-messages.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
