@@ -9,7 +9,7 @@ printMessages.color = (color) ->
     for arg, n in arguments
       if 'string' is typeof arg 
         console.log arg[unless n then color else 'white']
-      else
+      else if arg
         console.log arg
 
 printMessages[n] = method for n, method of {
@@ -27,11 +27,37 @@ printMessages[n] = method for n, method of {
     else
       @success msg, result
 
+  # Pass directly to a promise.otherwise for logging only failing
+  crash: (err, args...) ->
+    process.nextTick =>
+      reason = err?.msg ? err ? 'Unknown error'
+      printMessages.error reason, err?.stack, args...
+    if 'string' is typeof err
+      throw new Error err
+    throw err
+
+  crash_cb: (msgs...) ->
+    (err) -> printMessages.crash err, msgs...
+
   promise: (msg, promise) ->
     promise.then (result) =>
-      @success msg, result
+      printMessages.success msg, result
     , (err) =>
-      @error   msg, err
+      printMessages.error   msg, err
+
+  
+  log_cb: (msg) ->
+    -> printMessages.log msg, arguments...
+
+  success_cb: (msg) ->
+    -> printMessages.success msg, arguments...
+
+  warn_cb: (msg) ->
+    -> printMessages.warn msg, arguments...
+
+  error_cb: (msg) ->
+    -> printMessages.error msg, arguments...
+
 }
 
 module.exports = printMessages
