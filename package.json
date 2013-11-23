@@ -1,0 +1,29 @@
+{
+  "name": "print-messages",
+  "version": "0.0.0",
+  "description": "We console lots, this handles everything",
+  "main": "lib/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danschumann/print-messages.git"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "print",
+    "formatted"
+  ],
+  "author": "Daniel Hastings Schumann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danschumann/print-messages/issues"
+  },
+  "homepage": "https://github.com/danschumann/print-messages",
+  "dependencies": {
+    "colors": "~0.6.2",
+    "when": "~2.6.0"
+  }
+}
