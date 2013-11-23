@@ -1,7 +1,7 @@
 print-messages
 ==============
 
-We console a lot, this handles it all
+Because console.logs that are easier to read and write is a double edge sword of time saving.
 
     npm install print-messages
     
