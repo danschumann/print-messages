@@ -6,6 +6,7 @@ We console a lot, this handles it all
 
 ####Example
 
+```js
     var fs, pm, promise, willFail, willSucceed;
     fs = require('fs');
     promise = require('when');
@@ -28,5 +29,6 @@ We console a lot, this handles it all
     willFail = promise.defer();
     pm.promise('Whereas this is for a promise', willFail.promise);
     willFail.reject('That fails');
+```
 
 ![example-image](https://rawgithub.com/danschumann/print-messages/master/example_output.gif)
