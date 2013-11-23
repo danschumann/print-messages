@@ -23,7 +23,7 @@ printMessages[n] = method for n, method of {
   #   pm.node('This might have worked', arguments...)
   node: (msg, err, result) ->
     if err
-      @warn msg, err
+      @error msg, err
     else
       @success msg, result
 
