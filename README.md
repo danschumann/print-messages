@@ -3,6 +3,8 @@ print-messages
 
 We console a lot, this handles it all
 
+$bash> npm install print-messages
+
 
 ####Example
 ```js
