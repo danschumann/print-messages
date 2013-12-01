@@ -89,7 +89,7 @@ Added `newLine [=true]` and `blankLine [=true]` options to determine if argument
     pm.newLine = false;
     pm.blankLine = false;
 
-![example-image](https://rawgithub.com/danschumann/print-messages/master/example_images/newLine_example.gif)
+![example-image](https://rawgithub.com/danschumann/print-messages/master/example_images/newLine_example.png)
 
 
 Added a way to change colors.
@@ -98,7 +98,7 @@ Added a way to change colors.
     pm.colors.success = 'blue';
     pm.init()
 
-![example-image](https://rawgithub.com/danschumann/print-messages/master/example_images/colors_example.gif)
+![example-image](https://rawgithub.com/danschumann/print-messages/master/example_images/colors_example.png)
 
 v0.2.2
 
