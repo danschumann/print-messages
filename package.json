@@ -1,8 +1,8 @@
 {
   "name": "print-messages",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "We console lots, this handles everything",
-  "main": "lib/print-messages.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/danschumann/print-messages",
   "dependencies": {
     "colors": "~0.6.2",
-    "when": "~2.6.0"
+    "when": "~2.6.0",
+    "underscore": "~1.5.2"
   }
 }

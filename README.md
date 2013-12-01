@@ -80,6 +80,26 @@ willFail.reject('That fails');
 Patch Notes
 ------------------------------
 
+v0.3.0
+
+Updated from coffee-script to js.
+
+Added `newLine [=true]` and `blankLine [=true]` options to determine if arguments should be on new lines and if each log should be preceeded by a blank line.  Both false looks like this:
+
+    pm.newLine = false;
+    pm.blankLine = false;
+
+![example-image](https://rawgithub.com/danschumann/print-messages/master/example_images/newLine_example.gif)
+
+
+Added a way to change colors.
+
+    pm.colors.error = 'magenta';
+    pm.colors.success = 'blue';
+    pm.init()
+
+![example-image](https://rawgithub.com/danschumann/print-messages/master/example_images/colors_example.gif)
+
 v0.2.2
 
 Ensured at least 1 printed message will appear, even if first arg is an object
