@@ -114,7 +114,7 @@ _.each(['node', 'log', 'success', 'warn', 'error'], function(type){
     return function(){
 
       // When it gets called back it finally writes a message
-      return printMessages[type].apply(null, [message].concat(__slice(arguments)));
+      return printMessages[type].apply(null, [msg].concat(__slice(arguments)));
     }
   }
 
