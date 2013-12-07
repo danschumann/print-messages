@@ -81,7 +81,7 @@ _.extend(printMessages, {
       var reason = (err && err.message) || err || 'Unknown Error';
       printMessages.error.apply(null, [reason, err && err.stack].concat(__slice.call(arguments, 1)));
       if ( 'string' == typeof err )
-        throw new Erorr(err);
+        throw new Error(err);
       throw err;
     });
   },
