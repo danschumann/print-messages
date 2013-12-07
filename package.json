@@ -1,6 +1,6 @@
 {
   "name": "print-messages",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "We console lots, this handles everything",
   "main": "index.js",
   "scripts": {
